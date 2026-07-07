@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS dplayer_db
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE dplayer_db;
+
+CREATE TABLE IF NOT EXISTS watchlist (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  movie_id INT NOT NULL UNIQUE,
+  title VARCHAR(255) NOT NULL,
+  poster_path VARCHAR(255),
+  rating FLOAT,
+  notes TEXT NULL DEFAULT NULL,
+  added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
