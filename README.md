@@ -1,4 +1,4 @@
-# 🎬 Dplayer (Dims Movie)
+# 🎬 Dims Movie
 
 Sebuah aplikasi katalog film berbasis Flutter yang komprehensif. Aplikasi ini memungkinkan pengguna untuk menemukan film-film yang sedang tren, mencari judul spesifik melalui API TMDB, dan mengelola daftar tontonan (watchlist) pribadi lengkap dengan catatan kustom.
 
