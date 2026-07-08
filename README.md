@@ -70,6 +70,3 @@ flutter build apk --dart-define=TMDB_ACCESS_TOKEN=your_tmdb_v4_access_token
 - `lib/models/`: Dart data models for parsing JSON responses.
 - `lib/widgets/`: Reusable UI components.
 
-## 📝 License
-
-This project is open-source and available under the [MIT License](LICENSE).
