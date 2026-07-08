@@ -5,10 +5,10 @@ Sebuah aplikasi katalog film berbasis Flutter yang komprehensif. Aplikasi ini me
 ## 📱 Cuplikan Layar (Screenshots)
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="path_to_screenshot_1.png" alt="Beranda" width="23%">
-  <img src="path_to_screenshot_2.png" alt="Pencarian" width="23%">
-  <img src="path_to_screenshot_3.png" alt="Detail Film" width="23%">
-  <img src="path_to_screenshot_4.png" alt="Watchlist & Catatan" width="23%">
+  <img src="screenshots/WhatsApp Image 2026-07-08 at 20.08.09.jpeg" alt="Beranda" width="23%">
+  <img src="screenshots/WhatsApp Image 2026-07-08 at 20.08.09 (1).jpeg" alt="Pencarian" width="23%">
+  <img src="screenshots/WhatsApp Image 2026-07-08 at 20.08.10.jpeg" alt="Detail Film" width="23%">
+  <img src="screenshots/WhatsApp Image 2026-07-08 at 20.16.11.jpeg" alt="Watchlist & Catatan" width="23%">
 </div>
 
 ## ✨ Fitur Utama
