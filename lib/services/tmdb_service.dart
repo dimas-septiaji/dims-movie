@@ -12,7 +12,7 @@ class TMDBService {
   static Map<String, String> get _headers {
     if (accessToken.isEmpty) {
       throw Exception(
-        'TMDB_ACCESS_TOKEN belum diisi. Jalankan Flutter dengan --dart-define=TMDB_ACCESS_TOKEN=token_kamu',
+        '--dart-define=TMDB_ACCESS_TOKEN=token_kamuTMDB_ACCESS_TOKEN belum diisi. Jalankan Flutter dengan ',
       );
     }
 
