@@ -1,75 +1,84 @@
 # 🎬 Dplayer (Dims Movie)
 
-A comprehensive Flutter-based movie catalog application that allows users to discover trending movies, search for specific titles via the TMDB API, and manage a personalized watchlist complete with custom notes.
+Sebuah aplikasi katalog film berbasis Flutter yang komprehensif. Aplikasi ini memungkinkan pengguna untuk menemukan film-film yang sedang tren, mencari judul spesifik melalui API TMDB, dan mengelola daftar tontonan (watchlist) pribadi lengkap dengan catatan kustom.
 
-## ✨ Features
+## 📱 Cuplikan Layar (Screenshots)
 
-- **Trending Movies**: Discover popular and top-rated movies directly from the home screen.
-- **Search Capabilities**: Search the vast TMDB database for your favorite movies.
-- **Detailed Information**: View comprehensive movie details, including posters, ratings, overviews, and more.
-- **Personal Watchlist**: Save movies to your personal watchlist for later viewing.
-- **Custom Notes**: Add personal notes or reviews to movies in your watchlist.
-- **State Management**: Built with robust state management using `provider`.
-- **Backend Integration**: Supports syncing data via a custom backend (Node.js/PHP).
+<div style="display: flex; justify-content: space-between;">
+  <img src="path_to_screenshot_1.png" alt="Beranda" width="23%">
+  <img src="path_to_screenshot_2.png" alt="Pencarian" width="23%">
+  <img src="path_to_screenshot_3.png" alt="Detail Film" width="23%">
+  <img src="path_to_screenshot_4.png" alt="Watchlist & Catatan" width="23%">
+</div>
 
-## 🛠️ Tech Stack
+## ✨ Fitur Utama
+
+- **Film Trending**: Temukan film-film populer dan dengan rating tertinggi langsung dari halaman utama.
+- **Pencarian Film**: Cari film favorit Anda melalui database TMDB yang sangat luas.
+- **Informasi Detail**: Lihat detail film secara komprehensif, termasuk poster, rating, sinopsis, dan lainnya.
+- **Watchlist Pribadi**: Simpan film ke dalam daftar tontonan pribadi untuk ditonton nanti.
+- **Catatan Kustom**: Tambahkan catatan pribadi atau ulasan pada film yang ada di watchlist Anda.
+- **State Management**: Dibangun menggunakan manajemen state yang andal dengan `provider`.
+- **Integrasi Backend**: Mendukung sinkronisasi data melalui backend kustom (Node.js/PHP).
+
+## 🛠️ Tech Stack (Teknologi yang Digunakan)
 
 - **Frontend**: Flutter & Dart
 - **State Management**: Provider
 - **API**: [The Movie Database (TMDB) API](https://developer.themoviedb.org/docs)
-- **Backend**: Custom Node.js / PHP backend integration for watchlist management.
+- **Backend**: Integrasi backend kustom dengan Node.js / PHP untuk manajemen watchlist.
 
-## 🚀 Getting Started
+## 🚀 Panduan Memulai
 
-### Prerequisites
+### Prasyarat
 
-- Flutter SDK (v3.12.0 or higher)
-- A TMDB API v4 Access Token
+- Flutter SDK (v3.12.0 atau lebih baru)
+- Akses Token TMDB API v4
 
-### Installation
+### Instalasi
 
-1. **Clone the repository**
+1. **Clone repositori**
    ```bash
-   git clone https://github.com/yourusername/dplayer.git
+   git clone https://github.com/dimas-septiaji/dims-movie.git
    cd dplayer
    ```
 
-2. **Install dependencies**
+2. **Instal dependensi**
    ```bash
    flutter pub get
    ```
 
-3. **Backend Setup (Optional)**
-   For the optional Node.js backend, copy the example environment file and configure it:
+3. **Setup Backend (Opsional)**
+   Untuk menggunakan backend Node.js (opsional), salin file environment contoh dan sesuaikan:
    ```bash
    cp backend/.env.example backend/.env
    ```
-   *Note: Fill in the required variables locally. The `.env` file is ignored by Git.*
+   *Catatan: Isi variabel yang dibutuhkan secara lokal. File `.env` diabaikan oleh Git.*
 
-### Running the App
+### Menjalankan Aplikasi
 
-> **⚠️ Important**: Do not commit API keys or database credentials to version control.
+> **⚠️ Penting**: Jangan pernah commit API keys atau kredensial database ke version control (Git).
 
-Provide your TMDB Access Token when running the app. 
+Sertakan TMDB Access Token Anda saat menjalankan aplikasi.
 
-**For Development (Run locally):**
+**Untuk Development (Menjalankan secara lokal):**
 ```bash
 flutter run --dart-define=TMDB_ACCESS_TOKEN=your_tmdb_v4_access_token
 ```
 
-**For Release Build (APK):**
+**Untuk Build Rilis (APK):**
 ```bash
 flutter build apk --dart-define=TMDB_ACCESS_TOKEN=your_tmdb_v4_access_token
 ```
 
-## 📂 Project Structure
+## 📂 Struktur Proyek
 
-- `lib/screens/`: Contains all UI screens (`home_screen`, `detail_screen`, `search_screen`, `watchlist_screen`).
-- `lib/services/`: Handles API calls to TMDB (`tmdb_service`) and the custom backend (`backend_service`).
-- `lib/providers/`: State management for the app.
-- `lib/models/`: Dart data models for parsing JSON responses.
-- `lib/widgets/`: Reusable UI components.
+- `lib/screens/`: Berisi semua halaman UI (`home_screen`, `detail_screen`, `search_screen`, `watchlist_screen`).
+- `lib/services/`: Menangani panggilan API ke TMDB (`tmdb_service`) dan backend kustom (`backend_service`).
+- `lib/providers/`: File untuk state management aplikasi.
+- `lib/models/`: Model data Dart untuk melakukan parsing respons JSON.
+- `lib/widgets/`: Komponen UI yang dapat digunakan kembali (reusable).
 
-## 📝 License
+## 📝 Lisensi
 
-This project is open-source and available under the [MIT License](LICENSE).
+Proyek ini bersifat open-source dan tersedia di bawah [MIT License](LICENSE).
